@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.img {
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.namePage{
+  width: 1200px;
+  height: 100px;
+  background-color: black;
+  margin: 50px auto;
+  box-shadow: 3px 2px 6px;
+  padding: 0 3rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home{
+  width: 1200px;
+  height: 200px;
+  background-color: white;
+  margin: 50px auto;
+  box-shadow: 2px 4px 6px;
+  padding: 0 3rem;
+  border-radius: 10px;
+}
+
+.pembayaran{
+  width: 1200px;
+  height: 700px;
+  background-color: white;
+  margin: 50px auto;
+  padding: 0 3rem;
+  border: 2px solid gray;
+}
+
+.dokumen,
+.dataDokumen,
+.ortu,
+.rincian,
+.wali,
+.peserta,
+.pendidikan,
+.header{
+  width: 1200px;
+  height: 87px;
+  background-color: #32C671;
+  margin: 50px auto;
+  box-shadow: 2px 2px 6px;
+  padding: 0 3rem;
+  border-radius: 10px;
+  color: #fafafa;
+}
+.box{
+  width: 1200px;
+  height: 87px;
+  margin: auto;
+}
+
+.rxid-table table thead tr th {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.rxid-table table thead tr th div.th-content {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+}
+.rxid-table table thead tr th.sortable:hover {
+  cursor: pointer;
+  background-color: #fafafa;
 }
 
-.App-link {
-  color: #61dafb;
+.rxid-table table thead tr th.sortable div.th-content span.sort {
+  display: block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.rxid-table table thead tr th div.th-content span.sort {
+  display: none;
+}
+
+.rxid-table table thead tr th,
+.rxid-table table tbody tr td {
+  white-space: nowrap;
+}
+
+.rxid-table table tbody{
+  border-top: unset !important;
+}
+
+.rxid-table table tbody tr:hover td {
+  background-color: #fafafa;
+}
+
+/* table footer */
+.rxid-table .rxid-table-footer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.rxid-table .rxid-table-footer .select-max-row {
+  width: 64px;
 }
